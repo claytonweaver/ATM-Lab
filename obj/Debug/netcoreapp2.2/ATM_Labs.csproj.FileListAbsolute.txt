@@ -1,0 +1,11 @@
+C:\Users\New Owner\Documents\PROGRAMMING\C#\Grand Circus\Labs\ATM_Labs\bin\Debug\netcoreapp2.2\ATM_Labs.deps.json
+C:\Users\New Owner\Documents\PROGRAMMING\C#\Grand Circus\Labs\ATM_Labs\bin\Debug\netcoreapp2.2\ATM_Labs.runtimeconfig.json
+C:\Users\New Owner\Documents\PROGRAMMING\C#\Grand Circus\Labs\ATM_Labs\bin\Debug\netcoreapp2.2\ATM_Labs.runtimeconfig.dev.json
+C:\Users\New Owner\Documents\PROGRAMMING\C#\Grand Circus\Labs\ATM_Labs\bin\Debug\netcoreapp2.2\ATM_Labs.dll
+C:\Users\New Owner\Documents\PROGRAMMING\C#\Grand Circus\Labs\ATM_Labs\bin\Debug\netcoreapp2.2\ATM_Labs.pdb
+C:\Users\New Owner\Documents\PROGRAMMING\C#\Grand Circus\Labs\ATM_Labs\obj\Debug\netcoreapp2.2\ATM_Labs.csprojAssemblyReference.cache
+C:\Users\New Owner\Documents\PROGRAMMING\C#\Grand Circus\Labs\ATM_Labs\obj\Debug\netcoreapp2.2\ATM_Labs.csproj.CoreCompileInputs.cache
+C:\Users\New Owner\Documents\PROGRAMMING\C#\Grand Circus\Labs\ATM_Labs\obj\Debug\netcoreapp2.2\ATM_Labs.AssemblyInfoInputs.cache
+C:\Users\New Owner\Documents\PROGRAMMING\C#\Grand Circus\Labs\ATM_Labs\obj\Debug\netcoreapp2.2\ATM_Labs.AssemblyInfo.cs
+C:\Users\New Owner\Documents\PROGRAMMING\C#\Grand Circus\Labs\ATM_Labs\obj\Debug\netcoreapp2.2\ATM_Labs.dll
+C:\Users\New Owner\Documents\PROGRAMMING\C#\Grand Circus\Labs\ATM_Labs\obj\Debug\netcoreapp2.2\ATM_Labs.pdb
