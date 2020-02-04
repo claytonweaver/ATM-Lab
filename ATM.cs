@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -26,10 +26,6 @@ namespace ATM_Labs
 
         public Account Register()
         {
-            if (AccountLoggedIn())
-            {
-                LogOut();
-            }
             bool loggedIn = false;
             
                 string name = Program.GetUserInput("Enter the username of your account.");
@@ -45,9 +41,6 @@ namespace ATM_Labs
                 Account newAccount = new Account(name, password, loggedIn, balance);
                 accounts.Add(newAccount);
                 return newAccount;
-            
-
-
         }
 
         public void LogIn()
@@ -60,20 +53,14 @@ namespace ATM_Labs
             {
                 if (account.LoggedIn)
                 {
-                    Console.WriteLine("There is already a logged on user. Please log out.");
-                    //Add log out method here.
+                    Console.WriteLine("There is already a logged on user. Logging user out.");
+                    LogOut();
                 }
                 else if (account.Name == name && account.Password == password)
                 {
                     account.LoggedIn = true;
                 }
-                else
-                {
-
-                }
-
             }
-
         }
 
         public void LogOut()
@@ -128,28 +115,29 @@ namespace ATM_Labs
         public void Withdraw(double withdrawAmount)
         {
             double newAmount = 0.0;
-            if (AccountLoggedIn())
+            foreach (var account in accounts)
             {
-
-                foreach (var account in accounts)
+                if (account.LoggedIn == true)
                 {
-                        newAmount = account.Balance - withdrawAmount;
-                        account.Balance = newAmount;
+                    newAmount = account.Balance - withdrawAmount;
+                    account.Balance = newAmount;
                 }
-
-                double balance = CheckBalance();
-
-                Console.WriteLine($"You've withdrawn ${withdrawAmount}. Your new balance is ${balance}.");
             }
+            double balance = CheckBalance();
+            Console.WriteLine($"You've withdrawn ${withdrawAmount}. Your new balance is ${balance}.");
             
         }
 
-
-
-
-
-
-
-
+        public bool LoginValidation(string name, string password)
+        {
+            foreach (var account in accounts)
+            {
+                if (account.Name == name && account.Password == password)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }
