@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace ATM_Labs
@@ -26,6 +26,7 @@ namespace ATM_Labs
                     if (userInput == 1)
                     {
                         atm.LogIn();
+
                         if (atm.AccountLoggedIn())
                         {
                             //Second do while loop (the account layer)
@@ -76,7 +77,6 @@ namespace ATM_Labs
                         }
                         else
                         {
-                            Console.WriteLine("There's no account with this login information.");
                             resume = AskToTryAgain(GetUserInput(tryAgain));
                         }
                     }
